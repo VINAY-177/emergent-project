@@ -30,6 +30,7 @@ export default function FoodListings() {
   const [claimDialog, setClaimDialog] = useState(null);
   const [claimLoading, setClaimLoading] = useState(false);
 
+useEffect(() => {
   const fetchListings = async () => {
     try {
       const params = {};
@@ -43,6 +44,10 @@ export default function FoodListings() {
       setLoading(false);
     }
   };
+
+  fetchListings();
+}, [statusFilter, user]);
+
 
   useEffect(() => {
     fetchListings();
