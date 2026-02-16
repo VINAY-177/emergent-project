@@ -1,0 +1,182 @@
+{
+  "project_name": "Food Waste Redistribution Platform",
+  "design_philosophy": {
+    "theme": "Eco-Minimalism",
+    "core_principles": [
+      "Trust & Transparency: Clean, open layouts with ample whitespace.",
+      "Action-Oriented: Green used strictly for primary actions and success states.",
+      "Data-First: Dashboards use card-based bento grids for scanability.",
+      "Human-Centric: Soft shadows and rounded corners to feel organic, not corporate."
+    ],
+    "mood": "Sustainable, Efficient, Community-Driven, Fresh"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Outfit, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h2": "text-3xl font-semibold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body_lg": "text-lg leading-relaxed",
+      "body": "text-base leading-normal text-muted-foreground",
+      "caption": "text-sm text-muted-foreground/80"
+    }
+  },
+  "colors": {
+    "primary": {
+      "DEFAULT": "#2E7D32",
+      "foreground": "#FFFFFF",
+      "hover": "#1B5E20",
+      "light": "#4CAF50"
+    },
+    "secondary": {
+      "DEFAULT": "#81C784",
+      "foreground": "#0F172A",
+      "light": "#E8F5E9"
+    },
+    "accent": {
+      "DEFAULT": "#FF9800",
+      "foreground": "#FFFFFF",
+      "soft": "#FFF3E0"
+    },
+    "background": {
+      "body": "#F8FAF8",
+      "card": "#FFFFFF",
+      "sidebar": "#FFFFFF"
+    },
+    "status": {
+      "success": "#2E7D32",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#0288D1"
+    }
+  },
+  "visual_enhancers": {
+    "border_radius": {
+      "card": "rounded-xl",
+      "button": "rounded-lg",
+      "input": "rounded-md"
+    },
+    "shadows": {
+      "card": "shadow-sm hover:shadow-md transition-shadow duration-200",
+      "floating": "shadow-lg shadow-black/5"
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%)",
+      "subtle_green": "linear-gradient(135deg, #E8F5E9 0%, #FFFFFF 100%)"
+    }
+  },
+  "layout_strategy": {
+    "dashboard_grid": {
+      "type": "Bento Grid",
+      "classes": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "presets": {
+        "kpi_card": "col-span-12 md:col-span-4 lg:col-span-3",
+        "main_chart": "col-span-12 md:col-span-8 lg:col-span-9 h-[400px]",
+        "sidebar_list": "col-span-12 md:col-span-4 lg:col-span-3 h-full",
+        "map_view": "col-span-12 h-[500px] rounded-xl overflow-hidden"
+      }
+    },
+    "containers": {
+      "main": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8",
+      "narrow": "max-w-3xl mx-auto px-4"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#2E7D32] hover:bg-[#1B5E20] text-white font-medium px-6 py-2 rounded-lg transition-colors",
+      "secondary": "bg-[#E8F5E9] text-[#2E7D32] hover:bg-[#C8E6C9] font-medium px-6 py-2 rounded-lg transition-colors",
+      "outline": "border-2 border-[#2E7D32] text-[#2E7D32] hover:bg-[#F1F8E9] px-6 py-2 rounded-lg font-medium"
+    },
+    "cards": {
+      "base": "bg-white rounded-xl border border-gray-100 shadow-sm p-6",
+      "interactive": "bg-white rounded-xl border border-gray-100 shadow-sm p-6 hover:border-[#2E7D32]/30 hover:shadow-md cursor-pointer transition-all"
+    },
+    "badges": {
+      "success": "bg-green-100 text-green-800 px-2.5 py-0.5 rounded-full text-xs font-medium",
+      "pending": "bg-orange-100 text-orange-800 px-2.5 py-0.5 rounded-full text-xs font-medium",
+      "neutral": "bg-gray-100 text-gray-800 px-2.5 py-0.5 rounded-full text-xs font-medium"
+    }
+  },
+  "image_urls": {
+    "login_hero": {
+      "url": "https://images.unsplash.com/photo-1691095744255-0fc8e93c4639?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHw0fHxmcmVzaCUyMHZlZ2V0YWJsZXMlMjBib3glMjB3b29kZW4lMjBjcmF0ZXxlbnwwfHx8fDE3NzEyNTQ2MjN8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Fresh organic vegetables in a wooden crate",
+      "category": "Hero Background"
+    },
+    "community_volunteers": {
+      "url": "https://images.unsplash.com/photo-1710092784814-4a6f158913b8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGZvb2QlMjBiYW5rJTIwdm9sdW50ZWVycyUyMHNlcnZpbmd8ZW58MHx8fHwxNzcxMjU0NjI0fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Community volunteers serving food",
+      "category": "About/Context"
+    },
+    "listings": [
+      {
+        "url": "https://images.unsplash.com/photo-1732988978797-ab74773b763b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwyfHxyZXN0YXVyYW50JTIwY2hlZiUyMHBhY2thZ2luZyUyMGZvb2QlMjBkb25hdGlvbnxlbnwwfHx8fDE3NzEyNTQ2MjV8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Prepared food donation",
+        "category": "Food Listing"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1635341083777-5f93a755e916?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwzfHxmcmVzaCUyMHZlZ2V0YWJsZXMlMjBib3glMjB3b29kZW4lMjBjcmF0ZXxlbnwwfHx8fDE3NzEyNTQ2MjN8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Fresh fruit crate",
+        "category": "Food Listing"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1673412810313-56ea5cd77384?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHw0fHxyZXN0YXVyYW50JTIwY2hlZiUyMHBhY2thZ2luZyUyMGZvb2QlMjBkb25hdGlvbnxlbnwwfHx8fDE3NzEyNTQ2MjV8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Packaging food",
+        "category": "Food Listing"
+      }
+    ],
+    "avatars": [
+      {
+        "url": "https://images.unsplash.com/photo-1755190897791-7040dfdb988f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwyfHxkaXZlcnNlJTIwcHJvZmVzc2lvbmFsJTIwaGVhZHNob3RzJTIwc21pbGluZ3xlbnwwfHx8fDE3NzEyNTQ2Mjd8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Male volunteer profile",
+        "category": "User Profile"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1675186914580-94356f7c012c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHw0fHxkaXZlcnNlJTIwcHJvZmVzc2lvbmFsJTIwaGVhZHNob3RzJTIwc21pbGluZ3xlbnwwfHx8fDE3NzEyNTQ2Mjd8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Female donor profile",
+        "category": "User Profile"
+      }
+    ],
+    "logistics": {
+       "url": "https://images.unsplash.com/photo-1768401627507-bde20567c0bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwyfHxlY28lMjBmcmllbmRseSUyMGRlbGl2ZXJ5JTIwZWxlY3RyaWMlMjB2YW58ZW58MHx8fHwxNzcxMjU0NjI2fDA&ixlib=rb-4.1.0&q=85",
+       "alt": "Green electric delivery van",
+       "category": "Pickup/Delivery"
+    }
+  },
+  "charts_and_data": {
+    "library": "Recharts",
+    "palette": ["#2E7D32", "#81C784", "#FF9800", "#FDD835", "#AED581"],
+    "style": "Minimal axes, grid lines dashed and light (stroke='#E0E0E0'), tooltips with white bg and shadow-lg."
+  },
+  "maps_integration": {
+    "library": "Leaflet",
+    "style": {
+      "tiles": "CartoDB Positron (Light, No Labels) or OpenStreetMap Standard",
+      "markers": "Custom SVG markers (Green for available, Orange for pending).",
+      "controls": "Minimal. Zoom bottom-right. No scale bar."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react' for icons immediately.",
+    "Install 'recharts' for data visualization.",
+    "Install 'leaflet' and 'react-leaflet' for maps.",
+    "Do NOT use 'create-react-app' default CSS. Use Tailwind utility classes for EVERYTHING.",
+    "Ensure all interactive elements have 'data-testid' attributes.",
+    "Authentication pages should use a split-screen layout: Left side form, Right side inspirational image (see image_urls.login_hero).",
+    "Dashboards must follow the Bento Grid layout defined in 'layout_strategy'.",
+    "Use the specified 'Outfit' font for headers. You may need to import it from Google Fonts in index.css.",
+    "For the 'Evaluation Engine', use progress bars and radial charts to visualize scores clearly.",
+    "All 'Status' indicators (Pending, Delivered, etc.) must use the badge styles defined in 'components.badges'."
+  ],
+  "universal_guidelines": [
+    "Avoid generic 'AI slop' designs. Don't center everything.",
+    "Use 2-3x more spacing (padding/margin) than standard.",
+    "Never use pure black (#000000). Use #0F172A or similar dark slate.",
+    "Glassmorphism is allowed for sticky headers (backdrop-blur-md bg-white/80).",
+    "Transitions: duration-200 ease-out for hover effects."
+  ]
+}
