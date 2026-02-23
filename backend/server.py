@@ -7,13 +7,15 @@ from database import db, client
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
+from passlib.context import CryptContext
 
+pwd_context = CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
 
 async def seed_admin_user():
     from passlib.context import CryptContext
     import uuid
     from datetime import datetime, timezone
-    pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+    CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
 
     admin = await db.users.find_one({"email": "bishtvinay131@gmail.com"})
     if not admin:

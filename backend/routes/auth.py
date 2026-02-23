@@ -10,8 +10,9 @@ from database import db
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 
 JWT_SECRET = os.environ.get("JWT_SECRET", "foodwaste_redistribution_secret_2024")
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+from passlib.context import CryptContext
 
+pwd_context = CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
 
 class RegisterRequest(BaseModel):
     email: str
